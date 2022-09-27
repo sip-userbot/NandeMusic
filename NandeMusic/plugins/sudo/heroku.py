@@ -69,7 +69,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Nandebin(data)
+                link = await Yukkibin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
