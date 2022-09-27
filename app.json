@@ -1,0 +1,99 @@
+{
+    "name": "NandeMusic",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/b7377dbb15379573b68dd.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Nande",
+    "NandeMusic",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "Dapatkan ini dari https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Dapatkan ini dari https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "Jika Anda ingin asisten Anda meninggalkan semua obrolan secara otomatis setelah beberapa waktu.",
+        "value": "True",
+        "required": false
+      },
+      "BOT_TOKEN": {
+        "description": "Token Bot dari Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Dapatkan url mongodb dari https://cloud.mongodb.com . Anda dapat mengosongkannya jika Anda mau, bot akan menggunakan database Yukki untuk Anda.",
+        "value": "",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "Nama untuk Bot Musik Anda. Tolong jangan gunakan karakter ascii",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ID pengguna dari pengguna yang ingin Anda tambahkan sebagai PEMILIK. Beberapa nilai harus dipisahkan dengan spasi.",
+        "value": "1883676087",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "String Session Pyrogram. Satu Asisten adalah Wajib.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Heroku API KEY anda!",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Nama Heroku Pertama-mu!",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ID Grup Log Anda, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Gunakan hanya Grup. Tolong jangan gunakan ID Saluran.",
+        "value": "",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "Jika Anda tidak tahu ini, biarkan apa adanya!",
+        "value": "https://github.com/sip-userbot/NandeMusic",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Nama Branch Upstream!",
+        "value": "master",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      }
+  }
