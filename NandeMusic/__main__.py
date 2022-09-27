@@ -59,7 +59,7 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await userbot.start()
+    await Nande.start()
     nande = await app.get_me()
     NandeMusic = nande.username
     await userbot.one.send_message("suportsipuserbot", f"@{NandeMusic}")
