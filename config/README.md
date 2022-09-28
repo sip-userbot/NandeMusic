@@ -6,7 +6,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Mandatory Vars
 
-- These are the minimum required vars need to setup to make Yukki Music Bot functional.
+- These are the minimum required vars need to setup to make Nande Music Bot functional.
 
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
@@ -55,7 +55,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Spotify Vars
 
-- You can play tracks or playlists from spotify from Yukki Music bot
+- You can play tracks or playlists from spotify from Nande Music bot
 - You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
 
 ### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/NandeMusicbot/deployment/spotify)
