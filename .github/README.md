@@ -1,4 +1,4 @@
-![](https://telegra.ph/file/fa34c7c1016aae47a6354.jpg)
+![]("https://telegra.ph/file/fa34c7c1016aae47a6354.jpg")
 
 <h4 align="center">
      BASE REPO YUKKI MUSIC BOT SAYA HANYA CLONING, MERUBAH / ATAU MENAMBAH BAHASA INDONESIA SUNDA, JAWA.
