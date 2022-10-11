@@ -62,7 +62,7 @@ async def init():
     await Nande.start()
     nande = await app.get_me()
     NandeMusic = nande.username
-    await userbot.one.send_message("suportsipuserbot", f"@{NandeMusic}")
+    await userbot.one.send_message("Nandesupport", f"@{NandeMusic}")
     try:
         await Nande.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
